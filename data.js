@@ -1,7 +1,51 @@
 var APP_DATA = {
   "scenes": [
     {
-      "id": "0-hall-rdc",
+      "id": "0-facade",
+      "name": "Facade",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1911.5,
+      "initialViewParameters": {
+        "yaw": 0.4255918252940152,
+        "pitch": -0.38040407162096557,
+        "fov": 1.397892632121691
+      },
+      "linkHotspots": [
+        {
+          "yaw": 0.9089179699377716,
+          "pitch": 0.06286483995447156,
+          "rotation": 0,
+          "target": "19-garage"
+        },
+        {
+          "yaw": -0.4263659397999877,
+          "pitch": -0.07382311132184682,
+          "rotation": 0,
+          "target": "1-hall-rdc"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "1-hall-rdc",
       "name": "Hall RDC",
       "levels": [
         {
@@ -33,13 +77,13 @@ var APP_DATA = {
           "yaw": 1.5674192582539712,
           "pitch": 0.06668942412031598,
           "rotation": 0,
-          "target": "18-facade"
+          "target": "0-facade"
         },
         {
           "yaw": -1.9334590693681513,
           "pitch": 0.1142743839569107,
           "rotation": 0,
-          "target": "16-cuisine-2"
+          "target": "17-cuisine-2"
         },
         {
           "yaw": 2.1736201630351104,
@@ -57,7 +101,7 @@ var APP_DATA = {
       "infoHotspots": []
     },
     {
-      "id": "1-atelier-1",
+      "id": "2-atelier-1",
       "name": "Atelier 1",
       "levels": [
         {
@@ -89,7 +133,7 @@ var APP_DATA = {
           "yaw": -1.3646720849187695,
           "pitch": 0.07367471822988492,
           "rotation": 0,
-          "target": "2-atelier-2"
+          "target": "3-atelier-2"
         },
         {
           "yaw": 2.11088178589271,
@@ -101,7 +145,7 @@ var APP_DATA = {
       "infoHotspots": []
     },
     {
-      "id": "2-atelier-2",
+      "id": "3-atelier-2",
       "name": "Atelier 2",
       "levels": [
         {
@@ -133,19 +177,19 @@ var APP_DATA = {
           "yaw": 0.6002161703223798,
           "pitch": 0.043026697915939494,
           "rotation": 0,
-          "target": "1-atelier-1"
+          "target": "2-atelier-1"
         },
         {
           "yaw": -2.5966664534472024,
           "pitch": 0.10243448068166394,
           "rotation": 0,
-          "target": "17-entre-jardin-1"
+          "target": "18-entre-jardin-1"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "3-bureau-piscine",
+      "id": "4-bureau-piscine",
       "name": "Bureau piscine",
       "levels": [
         {
@@ -177,19 +221,19 @@ var APP_DATA = {
           "yaw": 1.3692948440590857,
           "pitch": 0.07341006575595088,
           "rotation": 0,
-          "target": "14-couloir-piscine"
+          "target": "15-couloir-piscine"
         },
         {
           "yaw": -1.8881700081390704,
           "pitch": 0.07761169285103264,
           "rotation": 0,
-          "target": "13-chambre-piscine"
+          "target": "14-chambre-piscine"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "4-cave-1",
+      "id": "5-cave-1",
       "name": "Cave 1",
       "levels": [
         {
@@ -221,19 +265,19 @@ var APP_DATA = {
           "yaw": -1.0441501277232632,
           "pitch": 0.14223087630379183,
           "rotation": 0,
-          "target": "6-cave-3"
+          "target": "7-cave-3"
         },
         {
           "yaw": 2.5630398696121786,
           "pitch": 0.07871214435512641,
           "rotation": 0,
-          "target": "17-entre-jardin-1"
+          "target": "18-entre-jardin-1"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "5-cave-2",
+      "id": "6-cave-2",
       "name": "Cave 2",
       "levels": [
         {
@@ -264,7 +308,7 @@ var APP_DATA = {
       "infoHotspots": []
     },
     {
-      "id": "6-cave-3",
+      "id": "7-cave-3",
       "name": "cave 3",
       "levels": [
         {
@@ -296,25 +340,25 @@ var APP_DATA = {
           "yaw": -1.7205100030217597,
           "pitch": 0.10712034425106864,
           "rotation": 0,
-          "target": "4-cave-1"
+          "target": "5-cave-1"
         },
         {
           "yaw": -0.06752566032300145,
           "pitch": 0.06810775354263576,
           "rotation": 0,
-          "target": "5-cave-2"
+          "target": "6-cave-2"
         },
         {
           "yaw": 1.5260573546829237,
           "pitch": 0.14348613856803283,
           "rotation": 0,
-          "target": "7-cave-4"
+          "target": "8-cave-4"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "7-cave-4",
+      "id": "8-cave-4",
       "name": "cave 4",
       "levels": [
         {
@@ -346,7 +390,7 @@ var APP_DATA = {
           "yaw": -1.7347369591775568,
           "pitch": 0.12923069832890022,
           "rotation": 0,
-          "target": "6-cave-3"
+          "target": "7-cave-3"
         },
         {
           "yaw": 1.4675041125286983,
@@ -358,7 +402,7 @@ var APP_DATA = {
       "infoHotspots": []
     },
     {
-      "id": "8-chambre-1-1er",
+      "id": "9-chambre-1-1er",
       "name": "Chambre 1 1er",
       "levels": [
         {
@@ -396,7 +440,7 @@ var APP_DATA = {
       "infoHotspots": []
     },
     {
-      "id": "9-chambre-1-2eme",
+      "id": "10-chambre-1-2eme",
       "name": "Chambre 1 2eme",
       "levels": [
         {
@@ -434,7 +478,7 @@ var APP_DATA = {
       "infoHotspots": []
     },
     {
-      "id": "10-chambre-2-1er",
+      "id": "11-chambre-2-1er",
       "name": "Chambre 2 1er",
       "levels": [
         {
@@ -472,7 +516,7 @@ var APP_DATA = {
       "infoHotspots": []
     },
     {
-      "id": "11-chambre-3-1er",
+      "id": "12-chambre-3-1er",
       "name": "Chambre 3 1er",
       "levels": [
         {
@@ -510,7 +554,7 @@ var APP_DATA = {
       "infoHotspots": []
     },
     {
-      "id": "12-chambre-4-1er",
+      "id": "13-chambre-4-1er",
       "name": "Chambre 4 1er",
       "levels": [
         {
@@ -548,7 +592,7 @@ var APP_DATA = {
       "infoHotspots": []
     },
     {
-      "id": "13-chambre-piscine",
+      "id": "14-chambre-piscine",
       "name": "Chambre piscine",
       "levels": [
         {
@@ -580,13 +624,13 @@ var APP_DATA = {
           "yaw": 1.4221234735133255,
           "pitch": 0.08749429075346526,
           "rotation": 0,
-          "target": "3-bureau-piscine"
+          "target": "4-bureau-piscine"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "14-couloir-piscine",
+      "id": "15-couloir-piscine",
       "name": "couloir piscine",
       "levels": [
         {
@@ -630,13 +674,13 @@ var APP_DATA = {
           "yaw": 2.2487213505346695,
           "pitch": 0.12005109475016518,
           "rotation": 0,
-          "target": "3-bureau-piscine"
+          "target": "4-bureau-piscine"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "15-cuisine-1",
+      "id": "16-cuisine-1",
       "name": "cuisine 1",
       "levels": [
         {
@@ -668,7 +712,7 @@ var APP_DATA = {
           "yaw": -1.8451465190529568,
           "pitch": 0.029144298885610098,
           "rotation": 0,
-          "target": "16-cuisine-2"
+          "target": "17-cuisine-2"
         },
         {
           "yaw": 1.3947245891431024,
@@ -680,7 +724,7 @@ var APP_DATA = {
       "infoHotspots": []
     },
     {
-      "id": "16-cuisine-2",
+      "id": "17-cuisine-2",
       "name": "cuisine 2",
       "levels": [
         {
@@ -712,19 +756,19 @@ var APP_DATA = {
           "yaw": 2.682126748069816,
           "pitch": -0.014460386347860066,
           "rotation": 0,
-          "target": "15-cuisine-1"
+          "target": "16-cuisine-1"
         },
         {
           "yaw": -1.386719187367495,
           "pitch": 0.030234301743142566,
           "rotation": 0,
-          "target": "0-hall-rdc"
+          "target": "1-hall-rdc"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "17-entre-jardin-1",
+      "id": "18-entre-jardin-1",
       "name": "Entrée jardin 1",
       "levels": [
         {
@@ -756,13 +800,13 @@ var APP_DATA = {
           "yaw": 2.8876210082725837,
           "pitch": 0.13995273819051413,
           "rotation": 0,
-          "target": "4-cave-1"
+          "target": "5-cave-1"
         },
         {
           "yaw": -1.5937131383025491,
           "pitch": 0.1147770771815253,
           "rotation": 0,
-          "target": "2-atelier-2"
+          "target": "3-atelier-2"
         },
         {
           "yaw": 1.3159589021464662,
@@ -775,50 +819,6 @@ var APP_DATA = {
           "pitch": -0.03284699999814933,
           "rotation": 0,
           "target": "19-garage"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "18-facade",
-      "name": "Facade",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1911.5,
-      "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": 0.9089179699377716,
-          "pitch": 0.06286483995447156,
-          "rotation": 0,
-          "target": "19-garage"
-        },
-        {
-          "yaw": -0.4263659397999877,
-          "pitch": -0.07382311132184682,
-          "rotation": 0,
-          "target": "0-hall-rdc"
         }
       ],
       "infoHotspots": []
@@ -856,13 +856,13 @@ var APP_DATA = {
           "yaw": -0.2805563531055757,
           "pitch": -0.07616696811231982,
           "rotation": 0,
-          "target": "18-facade"
+          "target": "0-facade"
         },
         {
           "yaw": 2.5492863508869963,
           "pitch": 0.24684056117051156,
           "rotation": 0,
-          "target": "17-entre-jardin-1"
+          "target": "18-entre-jardin-1"
         }
       ],
       "infoHotspots": []
@@ -938,7 +938,7 @@ var APP_DATA = {
           "yaw": 2.3476727031423312,
           "pitch": 0.6344939089580262,
           "rotation": 0,
-          "target": "0-hall-rdc"
+          "target": "1-hall-rdc"
         },
         {
           "yaw": -2.6916718252691147,
@@ -956,25 +956,25 @@ var APP_DATA = {
           "yaw": 0.39538441754541154,
           "pitch": 0.14377915178934764,
           "rotation": 0,
-          "target": "8-chambre-1-1er"
+          "target": "9-chambre-1-1er"
         },
         {
           "yaw": -0.5515433830278127,
           "pitch": 0.0992386623529633,
           "rotation": 0,
-          "target": "10-chambre-2-1er"
+          "target": "11-chambre-2-1er"
         },
         {
           "yaw": -0.9403294132428286,
           "pitch": 0.060136947339817226,
           "rotation": 0,
-          "target": "11-chambre-3-1er"
+          "target": "12-chambre-3-1er"
         },
         {
           "yaw": -1.6688065510912509,
           "pitch": 0.12919137724055574,
           "rotation": 0,
-          "target": "12-chambre-4-1er"
+          "target": "13-chambre-4-1er"
         }
       ],
       "infoHotspots": []
@@ -1012,7 +1012,7 @@ var APP_DATA = {
           "yaw": -1.2526133136907358,
           "pitch": 0.0010072482037593034,
           "rotation": 0,
-          "target": "9-chambre-1-2eme"
+          "target": "10-chambre-1-2eme"
         },
         {
           "yaw": 0.41336370632140707,
@@ -1062,7 +1062,7 @@ var APP_DATA = {
           "yaw": -0.37188613406995685,
           "pitch": 0.16109132867953946,
           "rotation": 0,
-          "target": "17-entre-jardin-1"
+          "target": "18-entre-jardin-1"
         },
         {
           "yaw": 0.08511265238925603,
@@ -1074,7 +1074,7 @@ var APP_DATA = {
           "yaw": -2.0618995446819373,
           "pitch": 0.24412179282057878,
           "rotation": 0,
-          "target": "7-cave-4"
+          "target": "8-cave-4"
         },
         {
           "yaw": 2.645635442446297,
@@ -1187,7 +1187,7 @@ var APP_DATA = {
           "yaw": -2.9732701605478553,
           "pitch": 0.15266176829148748,
           "rotation": 0,
-          "target": "14-couloir-piscine"
+          "target": "15-couloir-piscine"
         }
       ],
       "infoHotspots": []
@@ -1225,7 +1225,7 @@ var APP_DATA = {
           "yaw": 2.166547612949011,
           "pitch": 0.1557921348743001,
           "rotation": 0,
-          "target": "0-hall-rdc"
+          "target": "1-hall-rdc"
         },
         {
           "yaw": 3.1357056018703506,
@@ -1281,7 +1281,7 @@ var APP_DATA = {
           "yaw": 2.4297303124254634,
           "pitch": 0.1181413518857184,
           "rotation": 0,
-          "target": "0-hall-rdc"
+          "target": "1-hall-rdc"
         },
         {
           "yaw": -0.7527441823336574,
@@ -1331,7 +1331,7 @@ var APP_DATA = {
           "yaw": 2.054738125169483,
           "pitch": 0.4609689047754131,
           "rotation": 0,
-          "target": "14-couloir-piscine"
+          "target": "15-couloir-piscine"
         }
       ],
       "infoHotspots": []
@@ -1375,7 +1375,7 @@ var APP_DATA = {
           "yaw": 0.017762757692903364,
           "pitch": -0.05544878163155609,
           "rotation": 0,
-          "target": "0-hall-rdc"
+          "target": "1-hall-rdc"
         },
         {
           "yaw": 1.6367034847463646,
@@ -1495,7 +1495,7 @@ var APP_DATA = {
           "yaw": 2.2913733200999893,
           "pitch": 0.06489188697236159,
           "rotation": 0,
-          "target": "15-cuisine-1"
+          "target": "16-cuisine-1"
         },
         {
           "yaw": 1.3155336135599338,
